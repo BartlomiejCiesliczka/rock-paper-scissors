@@ -1,0 +1,46 @@
+body{
+  background-color: rgb(20, 20, 20);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main{
+  display: grid;
+  place-items: center;
+  
+}
+.choose-btn{
+  width: 120px;
+  height: 120px;
+  background-color: rgb(20, 20, 20);
+  border-color: white;
+  border-radius: 50%;
+  border-width: 3px;
+  border-style: solid;
+  cursor: pointer;
+  margin: 1px 6px;
+}
+.icon{
+  height: 50px;
+}
+.title{
+  font-size: 30px;
+  font-weight: bolder;
+}
+.result{
+  font-size: 30px;
+  font-weight: bolder;
+}
+.chooses,
+.score{
+  font-size: 18px;
+}
+.chooses{
+  margin-bottom: 40px;
+}
+.reset-score-btn{
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}

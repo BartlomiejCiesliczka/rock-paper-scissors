@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>RPS</title>
+</head>
+<body>
+  <main>
+  <p class="title">
+    Rock Paper Scissors
+  </p>
+  <div class="btn">
+    <button 
+    onclick="yourMove('rock');"
+    class="choose-btn">
+      <img src="rock.png" class="icon">
+    </button>
+    <button class="choose-btn"
+    onclick="yourMove('paper')">
+      <img src="paper.png" class="icon">
+    </button>
+    <button class="choose-btn"
+    onclick="yourMove('scissors')">
+      <img src="scissors.png" class="icon">
+    </button>
+  </div>
+  <p class="result">
+  </p>
+  <p class="chooses">
+  </p>
+  <p class="score">
+    wins:, losses:
+  </p>
+  <button 
+  onclick="resetScore()"
+  class="reset-score-btn">
+    Reset Score
+  </button>
+</main>
+  <script src="index.js"></script>
+</body>
+</html>
