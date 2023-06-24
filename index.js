@@ -1,8 +1,4 @@
-let score = {
-  wins: 0,
-  losses: 0,
-  ties: 0
-};
+let score = JSON.parse(localStorage.getItem('score'));
 
 updateScore()
 
@@ -34,7 +30,7 @@ function yourMove(playerMove){
   Computer
   <img src="${computerMove}.png" class="icon">
   `
-
+  localStorage.setItem('score', JSON.stringify(score));
   updateScore()
 }
 
@@ -44,6 +40,7 @@ function resetScore(){
     losses: 0,
     ties: 0
   };
+  localStorage.setItem('score', JSON.stringify(score));
   updateScore()
 }
 
